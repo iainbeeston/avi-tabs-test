@@ -4,6 +4,7 @@ class Avo::Resources::HouseWithMainPanel < Avo::BaseResource
   # self.search = {
   #   query: -> { query.ransack(id_eq: params[:q], m: "or").result(distinct: false) }
   # }
+  self.description = "This is a resource with tabs defined inside a main panel. The actions and breadcrumbs for house are visible on the show and edit views, but the has-many field does not load in show or edit. It was not necessary to position the tabs inside the main panel with avo 2.x"#
 
   def index_fields
     field :id, as: :id
