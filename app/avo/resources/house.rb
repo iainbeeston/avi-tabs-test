@@ -18,6 +18,9 @@ class Avo::Resources::House < Avo::BaseResource
           field :address, as: :text
         end
       end
+      tab "Cats" do
+        field :cats, as: :has_many, show_on: :edit
+      end
       tab "Advanced" do
         panel do
           field :doors, as: :number
